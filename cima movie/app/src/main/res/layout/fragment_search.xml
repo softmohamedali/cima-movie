@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.SearchFragment"
+    android:background="@color/bgcolor">
+
+
+    <EditText
+        android:id="@+id/ed_searsh_searchfrag"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:background="@drawable/search_view"
+        android:inputType="textPersonName"
+        android:hint="@string/searsh"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toStartOf="@+id/fab_searsh_searshfrag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_searsh_searshfrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_search"
+        app:tint="@color/white"
+        android:backgroundTint="@color/light_bgcolor"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_searsh_searchfrag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ed_searsh_searchfrag"
+        android:contentDescription="@string/log_in"
+        android:focusable="true" />
+
+    <com.todkars.shimmer.ShimmerRecyclerView
+        android:id="@+id/recy_searsh_searchfrag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:shimmer_recycler_item_count="10"
+        app:shimmer_recycler_layout="@layout/shimmer_card_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_searsh_searchfrag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

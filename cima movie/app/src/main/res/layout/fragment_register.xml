@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.RegisterFragment"
+    android:background="@color/bgcolor">
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:text="Registartion form"
+        android:textColor="@color/font"
+        android:textSize="@dimen/font3"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <EditText
+        android:id="@+id/et_email_registerfrag"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/email"
+        android:paddingStart="10dp"
+        android:textSize="@dimen/font4"
+        android:textStyle="bold"
+        android:textColor="@color/bgcolor"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/et_password_regiterfrag"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/password"
+        android:paddingStart="10dp"
+        android:textSize="@dimen/font4"
+        android:textStyle="bold"
+        android:textColor="@color/bgcolor"
+        android:textColorHint="@color/hint"
+        app:layout_constraintEnd_toEndOf="@+id/et_email_registerfrag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_email_registerfrag"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_registerfrag"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btn_rigister_registerfrag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/light_bgcolor"
+        android:padding="15dp"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="@+id/et_password_regiterfrag"
+        app:layout_constraintStart_toStartOf="@+id/et_password_regiterfrag"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_regiterfrag" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/first_name"
+        android:background="@color/white"
+        android:textSize="@dimen/font4"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/hint"
+        android:textColor="@color/bgcolor"
+        app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/last_name"
+        android:background="@color/white"
+        android:textSize="@dimen/font4"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/hint"
+        android:textColor="@color/bgcolor"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/age"
+        android:background="@color/white"
+        android:textSize="@dimen/font4"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/hint"
+        android:textColor="@color/bgcolor"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+    <ProgressBar
+        android:id="@+id/prog_registerfrag"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
