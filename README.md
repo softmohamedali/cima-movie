@@ -24,6 +24,60 @@
 
 ## Log in 🌴🌴
 
-<img src="zphotos/a3ae3f47-718b-426b-866d-7e3c5732f34b.jpg" width="300">
+<img src="pic1.jpg" width="300">
 <br/>
 <br/>
+
+## Register🌴🌴
+
+<img src="pic2.jpg" width="300">
+
+<br/>
+<br/>
+
+## Register🌴🌴
+
+<img src="pic3.jpg" width="300">
+
+<br/>
+<br/>
+
+
+## Register🌴🌴
+
+<img src="pic4.jpg" width="300">
+
+<br/>
+<br/>
+## Register🌴🌴
+
+<img src="pic0.jpg" width="300">
+
+<br/>
+<br/>
+## Register🌴🌴
+
+<img src="pic5.jpg" width="300">
+
+<br/>
+<br/>
+## Register🌴🌴
+
+<img src="pic6.jpg" width="300">
+
+<br/>
+<br/>
+## Register🌴🌴
+
+<img src="pic7.jpg" width="300">
+
+<br/>
+<br/>
+## Register🌴🌴
+
+<img src="pic8.jpg" width="300">
+
+<br/>
+<br/>
+
+
